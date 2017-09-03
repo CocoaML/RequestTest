@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dbe-xb-Hk8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="WT9-9J-VL4">
+            <objects>
+                <navigationController id="Dbe-xb-Hk8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LgB-wg-bF6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rwJ-fR-87K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvr-6T-3ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="143"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮，判断网络请求状态，如果请求结果有状态，执行任务，如果尚未等到请求状态，等待。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-51-PQB">
+                                <rect key="frame" x="66" y="72" width="243" height="81.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0012183057421860286" green="0.0015584520725389073" blue="0.00071790573625838501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-gf-hlh">
+                                <rect key="frame" x="76" y="157.5" width="223" height="30"/>
+                                <color key="backgroundColor" red="0.78174091051851269" green="1" blue="0.46065307294874303" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="我想进入第一页"/>
+                                <connections>
+                                    <segue destination="I6D-0I-tTk" kind="push" id="Dq8-SE-R6F"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个页面有多个网络请求，等待网络请求结束后，刷新页面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Yp-Z32">
+                                <rect key="frame" x="33" y="287" width="309" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohw-hP-kDq">
+                                <rect key="frame" x="76" y="357" width="220" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="我想进入下一页"/>
+                                <connections>
+                                    <segue destination="2Mg-5a-jfz" kind="push" id="XLj-hy-cvf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qne-FY-4Wz">
+                                <rect key="frame" x="84" y="457" width="206" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.34705105633802819" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="关于GCD的一些总结"/>
+                                <connections>
+                                    <segue destination="zdK-Yi-ado" kind="push" id="pSG-Y9-JKd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EsF-gf-hlh" secondAttribute="trailing" constant="60" id="77C-fP-KEW"/>
+                            <constraint firstItem="EsF-gf-hlh" firstAttribute="top" secondItem="hzK-51-PQB" secondAttribute="bottom" constant="4" id="7vl-8L-NEU"/>
+                            <constraint firstItem="EsF-gf-hlh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="BHz-s5-PGW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="479.5" id="JWI-PX-HkX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="280" id="Kbp-aV-fjy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qne-FY-4Wz" secondAttribute="bottom" constant="176" id="M3V-j4-4gr"/>
+                            <constraint firstItem="hzK-51-PQB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="NIt-kD-3hZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qne-FY-4Wz" secondAttribute="trailing" constant="69" id="PHv-d1-B4i"/>
+                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="70" id="Tb7-Wk-vaT"/>
+                            <constraint firstItem="Ohw-hP-kDq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="UQy-Vs-TO2"/>
+                            <constraint firstItem="bRe-Yp-Z32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="WDR-Vj-3Xv"/>
+                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="aIB-eC-SQT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bRe-Yp-Z32" secondAttribute="trailing" constant="17" id="ceB-JF-M5H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hzK-51-PQB" secondAttribute="trailing" constant="50" id="mZX-E3-V3w"/>
+                            <constraint firstItem="EsF-gf-hlh" firstAttribute="top" secondItem="hzK-51-PQB" secondAttribute="bottom" constant="4" id="nmp-hJ-BOu"/>
+                            <constraint firstItem="bRe-Yp-Z32" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="99.5" id="npx-tU-8EE"/>
+                            <constraint firstItem="Ohw-hP-kDq" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="169.5" id="pm7-b8-nm1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bRe-Yp-Z32" secondAttribute="bottom" constant="309" id="rMu-Pn-fAi"/>
+                            <constraint firstItem="hzK-51-PQB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="uwu-NG-obS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ohw-hP-kDq" secondAttribute="trailing" constant="63" id="wmF-Ib-mo6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="首页" id="Vff-OI-5Es"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="142.57871064467767"/>
+        </scene>
+        <!--第二个页面-->
+        <scene sceneID="ZO1-cR-Uko">
+            <objects>
+                <viewController id="2Mg-5a-jfz" customClass="SecondViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ICw-gf-lYZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="X1a-fd-QQF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yvL-Am-Viz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个页面有多个网络请求，等待网络请求结束后，刷新页面" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq3-kz-U4s">
+                                <rect key="frame" x="68" y="167" width="239" height="179"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39809241979101317" green="1" blue="0.88051331075586248" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uq3-kz-U4s" secondAttribute="trailing" constant="52" id="Iil-n7-lA2"/>
+                            <constraint firstItem="Uq3-kz-U4s" firstAttribute="leading" secondItem="yvL-Am-Viz" secondAttribute="leadingMargin" constant="52" id="M9i-WD-P7H"/>
+                            <constraint firstItem="Uq3-kz-U4s" firstAttribute="top" secondItem="ICw-gf-lYZ" secondAttribute="bottom" constant="103" id="OzE-C2-PVU"/>
+                            <constraint firstItem="X1a-fd-QQF" firstAttribute="top" secondItem="Uq3-kz-U4s" secondAttribute="bottom" constant="321" id="sq6-v6-8DG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="第二个页面" id="Pnq-Af-wG9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CzN-FY-37m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="312.59370314842579"/>
+        </scene>
+        <!--第三个页面-->
+        <scene sceneID="oOY-Fd-eqc">
+            <objects>
+                <viewController id="zdK-Yi-ado" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Sr-lb-MBK"/>
+                        <viewControllerLayoutGuide type="bottom" id="lXs-9m-3fz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Enq-nq-5k7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="操作依赖 NSOperationQueue  模拟流程： 下载图片-添加水印-刷新界面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNr-nD-hN7">
+                                <rect key="frame" x="32" y="230" width="311" height="106"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.885590889084507" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KNr-nD-hN7" firstAttribute="top" secondItem="8Sr-lb-MBK" secondAttribute="bottom" constant="166" id="U9n-oh-l5l"/>
+                            <constraint firstItem="lXs-9m-3fz" firstAttribute="top" secondItem="KNr-nD-hN7" secondAttribute="bottom" constant="331" id="UTM-RE-Nkc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KNr-nD-hN7" secondAttribute="trailing" constant="16" id="c0c-8J-siy"/>
+                            <constraint firstItem="KNr-nD-hN7" firstAttribute="leading" secondItem="Enq-nq-5k7" secondAttribute="leadingMargin" constant="16" id="jAO-I4-cbn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="第三个页面" id="G8Q-hO-AAo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DmE-lD-v4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="854.1229385307347"/>
+        </scene>
+        <!--第一个页面-->
+        <scene sceneID="igo-bU-YJW">
+            <objects>
+                <viewController id="I6D-0I-tTk" customClass="FirstViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="U0t-Gm-vcf"/>
+                        <viewControllerLayoutGuide type="bottom" id="86B-r0-en3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6kX-od-brE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1T-yi-dk8">
+                                <rect key="frame" x="116" y="261" width="143" height="49"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="LogonButton">
+                                    <color key="titleColor" red="0.0012183057419999999" green="0.001558452073" blue="0.00071790573630000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickLogonButton:" destination="I6D-0I-tTk" eventType="touchUpInside" id="6dj-9n-pHg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮，判断网络请求状态，如果请求结果有状态，执行任务，如果尚未等到请求状态，等待。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iH-sM-vej">
+                                <rect key="frame" x="46" y="352" width="283" height="151"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99635429129999997" green="0.69006003370000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="5iH-sM-vej" firstAttribute="leading" secondItem="6kX-od-brE" secondAttribute="leadingMargin" constant="30" id="22M-sR-M8C"/>
+                            <constraint firstItem="5iH-sM-vej" firstAttribute="top" secondItem="m1T-yi-dk8" secondAttribute="bottom" constant="42" id="9ml-xP-Kpf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5iH-sM-vej" secondAttribute="trailing" constant="30" id="9s4-HD-eer"/>
+                            <constraint firstItem="m1T-yi-dk8" firstAttribute="top" secondItem="U0t-Gm-vcf" secondAttribute="bottom" constant="197" id="I18-hA-1bq"/>
+                            <constraint firstItem="86B-r0-en3" firstAttribute="top" secondItem="m1T-yi-dk8" secondAttribute="bottom" constant="357" id="Klf-a5-Q4x"/>
+                            <constraint firstItem="m1T-yi-dk8" firstAttribute="leading" secondItem="6kX-od-brE" secondAttribute="leadingMargin" constant="100" id="NiC-mu-lFb"/>
+                            <constraint firstItem="86B-r0-en3" firstAttribute="top" secondItem="5iH-sM-vej" secondAttribute="bottom" constant="164" id="OKO-R6-pnz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m1T-yi-dk8" secondAttribute="trailing" constant="100" id="db1-5H-chL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="第一个页面" id="coF-Br-H2R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TY1-p6-Ixb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1276" y="-349.47526236881561"/>
+        </scene>
+    </scenes>
+</document>
