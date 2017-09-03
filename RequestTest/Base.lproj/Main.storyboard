@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dbe-xb-Hk8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Dbe-xb-Hk8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -24,7 +24,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hvr-6T-3ve" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-172" y="143"/>
+            <point key="canvasLocation" x="-330" y="118"/>
         </scene>
         <!--首页-->
         <scene sceneID="tne-QT-ifu">
@@ -38,22 +38,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击按钮，判断网络请求状态，如果请求结果有状态，执行任务，如果尚未等到请求状态，等待。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-51-PQB">
-                                <rect key="frame" x="66" y="72" width="243" height="81.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="功能简述：点击按钮，判断网络请求状态，如果请求结果有状态，执行任务，如果尚未等到请求状态，等待。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-51-PQB">
+                                <rect key="frame" x="46" y="72" width="283" height="61"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0012183057421860286" green="0.0015584520725389073" blue="0.00071790573625838501" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsF-gf-hlh">
-                                <rect key="frame" x="76" y="157.5" width="223" height="30"/>
+                                <rect key="frame" x="76" y="137" width="223" height="50.5"/>
                                 <color key="backgroundColor" red="0.78174091051851269" green="1" blue="0.46065307294874303" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="我想进入第一页"/>
                                 <connections>
                                     <segue destination="I6D-0I-tTk" kind="push" id="Dq8-SE-R6F"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一个页面有多个网络请求，等待网络请求结束后，刷新页面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Yp-Z32">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="功能简述：一个页面有多个网络请求，等待网络请求结束后，刷新页面" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-Yp-Z32">
                                 <rect key="frame" x="33" y="287" width="309" height="71"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -62,36 +62,47 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohw-hP-kDq">
                                 <rect key="frame" x="76" y="357" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="我想进入下一页"/>
+                                <state key="normal" title="我想进入第二页"/>
                                 <connections>
                                     <segue destination="2Mg-5a-jfz" kind="push" id="XLj-hy-cvf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qne-FY-4Wz">
-                                <rect key="frame" x="84" y="457" width="206" height="34"/>
+                                <rect key="frame" x="15" y="557" width="343" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.34705105633802819" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="关于GCD的一些总结"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="我想进入第三页"/>
                                 <connections>
                                     <segue destination="zdK-Yi-ado" kind="push" id="pSG-Y9-JKd"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="功能简述：1、按照顺序执行操作NSOperationQueue实现    2、关于GCD的一些总结" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEE-ZF-E21">
+                                <rect key="frame" x="16" y="466" width="343" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="TEE-ZF-E21" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="5Rv-N2-42u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="EsF-gf-hlh" secondAttribute="trailing" constant="60" id="77C-fP-KEW"/>
                             <constraint firstItem="EsF-gf-hlh" firstAttribute="top" secondItem="hzK-51-PQB" secondAttribute="bottom" constant="4" id="7vl-8L-NEU"/>
                             <constraint firstItem="EsF-gf-hlh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="BHz-s5-PGW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="479.5" id="JWI-PX-HkX"/>
+                            <constraint firstItem="TEE-ZF-E21" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="79" id="KDY-bF-IEp"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="280" id="Kbp-aV-fjy"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qne-FY-4Wz" secondAttribute="bottom" constant="176" id="M3V-j4-4gr"/>
-                            <constraint firstItem="hzK-51-PQB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="NIt-kD-3hZ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Qne-FY-4Wz" secondAttribute="trailing" constant="69" id="PHv-d1-B4i"/>
-                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="70" id="Tb7-Wk-vaT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qne-FY-4Wz" secondAttribute="bottom" constant="50" id="M3V-j4-4gr"/>
+                            <constraint firstItem="hzK-51-PQB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="NIt-kD-3hZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qne-FY-4Wz" secondAttribute="trailing" constant="1" id="PHv-d1-B4i"/>
+                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="top" secondItem="TEE-ZF-E21" secondAttribute="bottom" constant="8" id="Qqa-ad-dN8"/>
+                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="top" secondItem="Ohw-hP-kDq" secondAttribute="bottom" constant="170" id="Tb7-Wk-vaT"/>
                             <constraint firstItem="Ohw-hP-kDq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="UQy-Vs-TO2"/>
                             <constraint firstItem="bRe-Yp-Z32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="WDR-Vj-3Xv"/>
-                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="aIB-eC-SQT"/>
+                            <constraint firstItem="Qne-FY-4Wz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-1" id="aIB-eC-SQT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bRe-Yp-Z32" secondAttribute="trailing" constant="17" id="ceB-JF-M5H"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hzK-51-PQB" secondAttribute="trailing" constant="50" id="mZX-E3-V3w"/>
+                            <constraint firstItem="TEE-ZF-E21" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kke-ef-ye8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hzK-51-PQB" secondAttribute="trailing" constant="30" id="mZX-E3-V3w"/>
                             <constraint firstItem="EsF-gf-hlh" firstAttribute="top" secondItem="hzK-51-PQB" secondAttribute="bottom" constant="4" id="nmp-hJ-BOu"/>
                             <constraint firstItem="bRe-Yp-Z32" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="99.5" id="npx-tU-8EE"/>
                             <constraint firstItem="Ohw-hP-kDq" firstAttribute="top" secondItem="EsF-gf-hlh" secondAttribute="bottom" constant="169.5" id="pm7-b8-nm1"/>
@@ -104,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="142.57871064467767"/>
+            <point key="canvasLocation" x="469.60000000000002" y="35.532233883058474"/>
         </scene>
         <!--第二个页面-->
         <scene sceneID="ZO1-cR-Uko">
@@ -172,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DmE-lD-v4S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="516" y="854.1229385307347"/>
+            <point key="canvasLocation" x="686" y="790"/>
         </scene>
         <!--第一个页面-->
         <scene sceneID="igo-bU-YJW">
