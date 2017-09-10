@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "AFNetworking/AFNetworking.h"
 
 @interface FirstViewController ()
 
@@ -22,7 +23,10 @@
     [super viewDidAppear:animated];
     
     // 网络请求，根据请求状态判断点击事件是否执行
-    [self checkStates];
+    [self request];
+ 
+    // 模拟的网络请求
+//    [self checkStates];
 }
 
 - (void)viewDidLoad {
@@ -32,6 +36,7 @@
     self.lock = dispatch_semaphore_create(1);
 }
 
+// 模拟的网络请求
 - (void)checkStates {
     NSLog(@"准备执行任务 1");
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
@@ -52,6 +57,38 @@
     });  
 }
 
+// 真正的网络请求
+- (void)request {
+
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
+    NSString *url = [NSString stringWithFormat:@"%s","http://v3.wufazhuce.com:8000/api/channel/movie/more/0?platform=ios&version=v4.0.1"];
+    [manager GET:url parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        
+        NSLog(@"请求 成功 ---");
+        
+        _states = @"Logon";
+        
+        dispatch_semaphore_signal(self.lock);
+
+        NSLog(@"任务1 执行完成");
+        
+        if (self.block) {
+            self.block();
+        }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"请求 失败...");
+        dispatch_semaphore_signal(self.lock);
+        
+    }];
+    
+}
+
 #pragma mark - 按钮点击事件
 - (IBAction)clickLogonButton:(id)sender {
  
@@ -67,8 +104,12 @@
         self.block();
     } else {
         NSLog(@"状态异常");
+        
+        // 若计数为0则一直等待
         dispatch_semaphore_wait(self.lock, DISPATCH_TIME_FOREVER);
-        NSLog(@"等待状态修复 ...");
+        
+        NSLog(@"等待状态修复 ... 再次请求");
+        [self request];
     }
 }
 
